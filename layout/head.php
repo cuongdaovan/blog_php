@@ -3,7 +3,9 @@ ob_start();
 require_once '../includes/util.php';
 require_once '../includes/auth.php'; ?>
 
-<?php include '../layout/checkLogin.php'; ?>
+<?php 	
+	require_once '../includes/auth.php';
+	checkLogin('login.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 	<head>

@@ -1,5 +1,5 @@
 
-<?php include '../layout_admin/head.php' ?>
+<?php include '../layout_admin/header.php' ?>
             <div class="navbar-default sidebar" role="navigation">
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav" id="side-menu">

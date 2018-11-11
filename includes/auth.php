@@ -16,10 +16,10 @@
 		session_destroy();
 	}
 
-	function checkLogin() {
+	function checkLogin($location) {
 		startSession();
 		if(!isset($_SESSION['username'])){
-			header('location:login.php');
+			header('location: '.$location);
 		}
 	}
 

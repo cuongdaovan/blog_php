@@ -5,7 +5,9 @@ function redirect($location) {
     header("Location: $location",true,303);
 }
 ?>
-<?php include '../layout/checkLogin.php'; ?>
+<?php   
+    require_once '../includes/auth.php';
+    checkLogin('login-admin.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
