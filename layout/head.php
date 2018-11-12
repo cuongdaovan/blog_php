@@ -1,7 +1,9 @@
 <?php 
 ob_start();
 require_once '../includes/util.php';
-require_once '../includes/auth.php'; ?>
+require_once '../includes/auth.php';
+require_once '../includes/db.php'; 
+?>
 
 <?php 	
 	require_once '../includes/auth.php';
@@ -28,12 +30,17 @@ require_once '../includes/auth.php'; ?>
 		<!-- Custom stlylesheet -->
 		<link type="text/css" rel="stylesheet" href="../content/style.css"/>
 
-		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-		<!--[if lt IE 9]>
-		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-		<![endif]-->
+		
+	    <link href="../content-admin/vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+	    <!-- Custom CSS -->
+	    <link href="../content-admin/css/sb-admin-2.css" rel="stylesheet">
+
+	    <!-- Morris Charts CSS -->
+	    <link href="../content-admin/vendor/morrisjs/morris.css" rel="stylesheet">
+
+	    <!-- Custom Fonts -->
+	    <link href="../content/font-awesome.min.css" rel="stylesheet" type="text/css">
 		<script src="../content/jquery.min.js"></script>
 		<script src="../content/bootstrap.min.js"></script>
 		<script src="../content/main.js"></script>

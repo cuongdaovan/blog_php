@@ -1,5 +1,12 @@
-<?php include '../layout/head.php' ?>
 
+<?php include '../layout/head.php' ?>
+<?php 
+	require_once '../includes/categorydb.php';
+	require_once '../includes/db.php';
+	connect();
+	$id = $_GET['id'];
+	$blog_id = get_cat_blog($id);
+ ?>
 		<!-- section -->
 		<div class="section">
 			<!-- container -->
@@ -8,14 +15,12 @@
 				<div class="row">
 					<div class="col-sm-8">
 						<div class="row">
-						<!-- 	<div class="col-md-12">
-								<div class="section-title">
-									<h2>Most Read</h2>a
-								</div>
-							</div> -->
-							<!-- post -->
 							
-								<?php include '../layout/recent_post.php'; ?>		
+							<?php
+								while ($row = mysqli_fetch_assoc($blog_id)) {
+									echo $row['blog_id'];
+								} 
+							?>	
 						</div>
 					</div>
 
@@ -31,3 +36,7 @@
 			<!-- /container -->
 		</div>
 		<!-- /section -->
+
+		
+
+		

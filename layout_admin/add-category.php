@@ -4,7 +4,7 @@
                     if(isset($_POST["add"])) {
                         connect();
                         addCat(escape($_POST["name"]), escape($_POST["description"]));
-                        header("location:login.php");
+                        // header("location:login.php");
                         // redirect("login.php");
                         disconnect();
                     }

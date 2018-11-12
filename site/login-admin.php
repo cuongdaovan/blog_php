@@ -22,7 +22,7 @@ setcookie("username", "", time() - 3600);
 					</div>
 					<div class="card fat">
 						<div class="card-body">
-							<h4 class="card-title">Login</h4>
+							<h4 class="card-title">Login-admin</h4>
 			<?php 
 				// require_once '../includes/util.php';
 				require_once '../includes/auth.php';

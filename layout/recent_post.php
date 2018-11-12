@@ -11,17 +11,12 @@
 	// disconnect();
 	
  ?>
-				<div class="row">
-					<div class="col-md-12">
-						<div class="section-title">
-							<h2>Recent Posts</h2>
-						</div>
-					</div>
+
 					<?php 
 
 						while ($row = mysqli_fetch_assoc($blogs)) {
 					?>
-					<div class="col-md-4">
+					<div class="col-sm-4">
 						<div class="post">
 							<a class="post-img" href="blog-post.html"><img src="<?php echo $row['picture'];?>" alt=""></a>
 							<div class="post-body">
@@ -30,13 +25,12 @@
 									echo $row['name']; ?></a>
 									<span class="post-date">March 27, 2018</span>
 								</div>
-								<h3 class="post-title"><a href="blog-post.html"><?php echo $row['title']; ?></a></h3>
+								<h3 class="post-title"><a href="blog_detail.php?id=<?php echo $row['blog_id']; ?>"><?php echo $row['title'];?></a></h3>
 							</div>
 						</div>
 					</div>
-					<?php
+						<?php
 						}
 					 ?>
 
-				</div>
-				<!-- /row -->
+<?php include '../layout/footer.php' ?>

@@ -4,14 +4,6 @@
 	connect();
 
 	$categories = getAllCategory();
-	// while ($row = mysqli_fetch_assoc($categories)) {
-	// 	$columns = array("name" => "name");
-	// 	foreach ($columns as $key => $value) {
-	// 		$data = $row[$key];
-	// 		echo "<td>$data</td>";
-	// 	}
-		
-	// }
 
 	disconnect();
 ?>
@@ -28,7 +20,7 @@
 						$data = $row[$key];
 
 			?>
-			<li><a href="" class="cat-1"><?php echo $data; ?><span>340</span></a></li>
+			<li><a href="category-blogpost.php?id=<?php echo $row['category_id']; ?>" class="cat-1"><?php echo $data; ?><span>340</span></a></li>
 			<?php
 						
 					}
