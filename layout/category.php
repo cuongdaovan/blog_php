@@ -20,7 +20,7 @@
 						$data = $row[$key];
 
 			?>
-			<li><a href="category-blogpost.php?id=<?php echo $row['category_id']; ?>" class="cat-1"><?php echo $data; ?><span>340</span></a></li>
+			<li><a href="category-blogpost.php?id=<?php echo $row['category_id']; ?>" class="cat-1"><?php echo $data; ?><span>200</span></a></li>
 			<?php
 						
 					}

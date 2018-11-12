@@ -1,4 +1,4 @@
-<?php include '../layout/head.php'?>
+<?php include '../layout_admin/header.php'?>
 <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">

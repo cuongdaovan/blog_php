@@ -21,10 +21,10 @@
                             <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i>functionalities<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="flot.html">Category</a>
+                                    <a href="list-category.php">Category</a>
                                 </li>
                                 <li>
-                                    <a href="morris.html">User</a>
+                                    <a href="list-user.php">User</a>
                                 </li>
                                 <li>
                                     <a href="">Blog</a>

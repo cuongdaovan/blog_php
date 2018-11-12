@@ -7,7 +7,7 @@ function redirect($location) {
 ?>
 <?php   
     require_once '../includes/auth.php';
-    checkLogin('login-admin.php'); ?>
+    checkLogin_admin('login-admin.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -52,7 +52,7 @@ function redirect($location) {
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../site/admin_site.php">SB Admin v2.0</a>
+                <a class="navbar-brand" href="admin-site.php">SB Admin v2.0</a>
             </div>
             <!-- /.navbar-header -->
 
@@ -252,7 +252,7 @@ function redirect($location) {
                         <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-user">
-                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        <li><a href="#"><i class="fa fa-user fa-fw"></i><?php echo $_COOKIE['username-admin']; ?></a>
                         </li>
                         <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
                         </li>
@@ -264,3 +264,5 @@ function redirect($location) {
                 </li>
                 <!-- /.dropdown -->
             </ul>
+    </nav>
+</div>

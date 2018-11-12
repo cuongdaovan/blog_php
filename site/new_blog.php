@@ -8,18 +8,12 @@
 				<div class="row">
 					<div class="col-sm-8">
 						<div class="row">
-						<!-- 	<div class="col-md-12">
-								<div class="section-title">
-									<h2>Most Read</h2>a
-								</div>
-							</div> -->
-							<!-- post -->
-							
+
 								<?php include '../layout/recent_post.php'; ?>		
 						</div>
 					</div>
 
-					<div class="col-sm-4">
+					<div class="col-sm-3">
 
 						<?php include '../layout/category.php' ?>
 						
@@ -31,3 +25,5 @@
 			<!-- /container -->
 		</div>
 		<!-- /section -->
+
+<?php include '../layout/footer.php' ?>

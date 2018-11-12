@@ -1,6 +1,6 @@
 <?php require_once '../includes/auth.php';
 logout();
-setcookie("username", "", time() - 3600);
+setcookie("username-admin", "", time() - 3600);
 ?>
 <!DOCTYPE html>
 <html>
@@ -31,7 +31,7 @@ setcookie("username", "", time() - 3600);
 				if(isset($_POST["login"])) {
 					$username = $_POST['username'];
 					$password = $_POST['password'];
-					if(login($username, $password))
+					if(login_admin($username, $password))
 					{
 						header('location:admin-site.php');
 					}

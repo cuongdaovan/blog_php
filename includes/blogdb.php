@@ -1,7 +1,7 @@
 <?php 
 	function getAllBlogs() {
 		return query("SELECT blog_id, title, content,
-			image, datetime, c.name, u.fullname
+			image, datetime, c.name, u.fullname, c.category_id
 		 FROM blogpost b
 		 INNER JOIN category c on b.category_id = c.category_id
 		 INNER JOIN user u on b.user_id = u.user_id

@@ -23,7 +23,7 @@
 							?>
 							<div class="col-sm-4">
 								<div class="post">
-									<a class="post-img" href="blog-post.html"><img src="<?php echo $blog['picture'];?>" alt=""></a>
+									<a class="post-img" href="blog-post.html"><img src="../image/<?php echo $blog['image'];?>" alt=""></a>
 									<div class="post-body">
 										<div class="post-meta">
 											<a class="post-category cat-1" href="category.html"><?php 
