@@ -18,7 +18,7 @@ function redirect($location) {
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Bootstrap Admin Theme</title>
+    <title>BlogIT</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="../content/bootstrap.min.css" rel="stylesheet">
@@ -52,7 +52,7 @@ function redirect($location) {
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="admin-site.php">SB Admin v2.0</a>
+                <a class="navbar-brand" href="admin-site.php"><img src="../image/logo.png" alt=""></a>
             </div>
             <!-- /.navbar-header -->
 

@@ -11,5 +11,8 @@
 	function get_cat_blog($id){
 		return query("SELECT b.blog_id FROM category c INNER JOIN blogpost b ON c.category_id=b.category_id WHERE c.category_id=$id");
 	}
+	function deleteCat($id) {
+		return query("DELETE FROM category WHERE category_id = $id");
+	}
 
  ?>

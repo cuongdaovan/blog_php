@@ -24,7 +24,7 @@
 		    <tr>
 		        <td><?php echo $row['name'] ?></td>
 		        <td><?php echo $row['description'] ?></td>
-		        <td><a href="">delete</a>-<a href="">update</a></td>
+		        <td><a href="delete-cat.php?id=<?php echo $row['category_id']; ?>">delete</a>-<a href="">update</a></td>
 		      </tr>
 		    <?php
 		    } ?>

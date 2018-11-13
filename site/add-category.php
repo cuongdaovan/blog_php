@@ -15,11 +15,12 @@
                         <div class="panel-body">
                             <div class="row">
                                 <div class="col-lg-6">
+                                    
              <?php 
                     require '../includes/categorydb.php';
                     if(isset($_POST["add"])) {
                         connect();
-                        // addCat(escape($_POST["name"]), escape($_POST["description"]));
+                        addCat(escape($_POST["name"]), escape($_POST["description"]));
                         redirect("list-category.php");
                         disconnect();
             		}
